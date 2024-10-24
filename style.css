@@ -1,0 +1,183 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+      
+    /* font-family: "Open Sans", sans-serif; */
+    line-height: 1.6;
+    background-color:rgb(7, 10, 2);
+}
+
+header {
+    background-color:rgb(251, 251, 255);
+    padding: 20px;
+    margin-top: 40px;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+     align-items:center; 
+     
+     padding: 5px;;
+    
+    
+
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño de tu logo */
+    
+    /* display: flex;
+    align-items: center; */
+    
+
+}
+
+.nav-links {
+    /* list-style: none; */
+     display: flex;
+    
+}
+ul {
+    list-style-type: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    display: flex;
+    /* margin-left: auto; Empuja los links hacia el final */
+}
+
+.nav-links li {
+    display:inline;
+    /* margin-left: 90px; */
+    padding: 10px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f0a500;
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+    
+}
+
+.section {
+    padding: 20px;
+    background-color:rgb(129, 168, 68);
+    margin: 20px 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(30, 66, 18, 0.1);
+    text-align: center;
+}
+
+    
+
+
+.section img {
+    max-width: 100%;
+    height:auto;
+    border-radius:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+h1{
+    /* font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+    margin-bottom: 20px;
+    
+    letter-spacing:0.5px ;
+    
+     text-align: center; /* Alinea el texto al centro */
+    
+    
+    
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); Sombra suave alrededor del texto */
+    font-size: 30px;
+    
+}
+h5{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    color:oldlace;
+    /* font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 500;
+  font-style: normal; */
+    margin-top: 30px;
+    text-decoration:wavy;
+    letter-spacing:0.5px ;
+}
+
+h2{
+    text-decoration: underline;
+}
+.container{
+    background-color: aliceblue;
+    margin: 0px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border-radius: 10%;
+}
+p {
+    font-weight: bold; /* Negrita */
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    color:;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
